@@ -1,310 +1,206 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Miniver&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>  
-    <header>
-        <nav class="navbar section-content">
-            <div class="nav-logo">
-                <img src="/pics/logo.jpg" alt="PhoneStore">
-                <h2 class="shopName">E-Devices Store</h2>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu" class="nav-link">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#gallery" class="nav-link">Phone</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#gallery" class="nav-link">accessory</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#gallery" class="nav-link">Laptop</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero-section">
-            <div class="hero-content section-content">
-                <div class="demo">
-                    <h2 class="title">Best E-Devices</h2>
-                    <h3 class="subtitle">Make your style become more and more special</h3>
-                    <p class="description">Welcome to our store - PARADISE OF TECHNOLOGY</p>
-                </div>
-                <div class="buttons">
-                    <a href="#" class="button order-now">Order Now</a>
-                    <a href="#" class="button contact-now">Contact now</a>
-                </div> 
-                <div class="background-image-wrapper">
-                    <img src="/pics/background.jpg" alt="background" class="background-image">
-                </div>
-            </div>
-        </section>
-        <section class="about-section" id="about">
-            <div class="section-content">
-                <div class="about-image-wrapper">
-                    <img src="/pics/about-image.jpg" alt="About" class="about-image">
-                </div>
-                <div class="about-details">
-                    <h2 class="section-title">ABOUT US</h2>
-                    <p class="text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                    , when an unknown printer took a galley of type and scrambled it to make a 
-                    type specimen book. It has survived not only five centuries, but also the leap
-                     into electronic typesetting, remaining essentially unchanged.
-                    </p>
-                    <div class="social-link-list">
-                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>                           
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="testimonials-section" id="testimonials">
-            <h2 class="section-title">SPECIAL SIRES</h2>
-            <div class="section-content">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="testimonials swiper-slide">
-                            <img src="/pics/scroll-bar-1.png" alt="scroll-1" class="scroll-bar-image">
-                            <h3 class="name">...</h3>
-                            <i class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Miniver&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>  
+        <%- include('partials/header.ejs') %>
+        <main>
+            <section class="hero-section">
+                <div class="hero-content section-content">
+                    <div class="hero-text-content">
+                        <div class="hero-tag">Công Nghệ Hiện Đại</div>
+                        <h1 class="hero-title">Khám Phá Thế Giới <span class="highlight">Công Nghệ</span> Tuyệt Vời</h1>
+                        <p class="hero-description">Chào mừng bạn đến với thiên đường công nghệ - nơi bạn có thể tìm thấy những thiết bị điện tử hiện đại nhất với chất lượng tốt nhất và giá cả phải chăng.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="primary-button">Mua Ngay</a>
+                            <a href="#" class="secondary-button">Khám Phá</a>
                         </div>
-                        <div class="testimonials swiper-slide">
-                            <img src="/pics/scroll-bar-2.png" alt="scroll-1" class="scroll-bar-image">
-                            <h3 class="name">...</h3>
-                            <i class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
-                        </div>
-                        <div class="testimonials swiper-slide">
-                            <img src="/pics/scroll-bar-3.png" alt="scroll-1" class="scroll-bar-image">
-                            <h3 class="name">...</h3>
-                            <i class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
-                        </div>
-                        <div class="testimonials swiper-slide">
-                            <img src="/pics/scroll-bar-4.png" alt="scroll-1" class="scroll-bar-image">
-                            <h3 class="name">...</h3>
-                            <i class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
+                        <div class="hero-features">
+                            <div class="feature-item">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <span>Giao hàng miễn phí</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>Bảo hành 24 tháng</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fa-solid fa-headset"></i>
+                                <span>Hỗ trợ 24/7</span>
+                            </div>
                         </div>
                     </div>
-                    <!-- Thêm thanh điều hướng và nút điều khiển -->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                </div>
-            </div>
-        </section>
-        <h2 class="section-title">Our Products</h2>
-        <section class="menu-section phone">
-            <div class="list-item"><img src="/pics/Iphone 11.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/Iphone 13.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/Iphone 14.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/Iphone 15 PRO MAX.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/Iphone 15.webp" alt="" class="item-image"></div>
-        </section>
-        <section class="menu-section laptop">
-            <div class="list-item"><img src="/pics/victus-15.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/lenovo-thinkbook-16.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/lenovo-legion-5.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/dell-xps-14.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/asus-zenbook-14.jpg" alt="" class="item-image"></div>
-        </section>
-        <section class="menu-section apple-watch">
-            <div class="list-item"><img src="/pics/apple-watch-1.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/apple-watch-2.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/apple-watch-3.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/apple-watch-4.jpg" alt="" class="item-image"></div>
-            <div class="list-item"><img src="/pics/apple-watch-5.jpg" alt="" class="item-image"></div>
-        </section>
-        <section class="section-blog">
-            <h2 class="section-title">Technology Blog</h2>
-            <div class="section-content">
-                <div class="blog-1"><img src="/pics/tech-blog-dan-dau-cong-nghe.png" alt="" class="image-item"></div>
-                <div class="blog-2">
-                    <img src="/pics/tech-blog-top10-sk.png" alt="" class="item-image">
-                    <div class="blog-2-1">
-                        <img src="/pics/tech-blog-gamma-ai.png" alt="" class="item-image">
-                        <img src="/pics/tech-blog-top-doanh-thu.png" alt="" class="item-image">
+                    <div class="hero-visual">
+                        <div class="device-showcase">
+                            <div class="device phone">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <div class="device-pulse"></div>
+                            </div>
+                            <div class="device laptop">
+                                <i class="fa-solid fa-laptop"></i>
+                                <div class="device-pulse"></div>
+                            </div>
+                            <div class="device watch">
+                                <i class="fa-solid fa-clock"></i>
+                                <div class="device-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="tech-particles">
+                            <div class="particle p1"></div>
+                            <div class="particle p2"></div>
+                            <div class="particle p3"></div>
+                            <div class="particle p4"></div>
+                            <div class="particle p5"></div>
+                        </div>
+                        <div class="promo-badge">
+                            <div class="badge-content">
+                                <span class="discount">20%</span>
+                                <span class="badge-text">GIẢM</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="nav-tech-blog">
-                <div class="image-text">
-                    <div class="block-image-text">
-                        <img src="/pics/nav-tech-blog-5.jpg" alt="" class="image-item">
-                            <div class="text">
-                                <h2 class="blog-title">
-                                is simply dummy text of the printing 
-                                and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </h2>
-                                <p class="date">March 21, 2025</p>
-                                <p class="spoil">It is a long established fact that a reader will be distracted by the readable content
-                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
-                                    normal distribution of letters
-                               </p>
-                            </div>
+            </section>
+            <section class="about-section" id="about">
+                <div class="section-content">
+                    <div class="about-image-wrapper">
+                        <img src="/pics/about-image.jpg" alt="About" class="about-image">
                     </div>
-                    <div class="block-image-text">
-                        <img src="/pics/nav-tech-blog-4.jpg" alt="" class="image-item">
-                            <div class="text">
-                                <h2 class="blog-title">
-                                is simply dummy text of the printing 
-                                and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </h2>
-                                <p class="date">March 21, 2025</p>
-                                <p class="spoil">It is a long established fact that a reader will be distracted by the readable content
-                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
-                                    normal distribution of letters
-                               </p>
-                            </div>
-                    </div>
-                    <div class="block-image-text">                   
-                        <img src="/pics/nav-tech-blog-3.jpg" alt="" class="image-item">
-                            <div class="text">
-                                <h2 class="blog-title">
-                                is simply dummy text of the printing 
-                                and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </h2>
-                                <p class="date">March 21, 2025</p>
-                                <p class="spoil">It is a long established fact that a reader will be distracted by the readable content
-                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
-                                    normal distribution of letters
-                               </p>
-                            </div>
-                    </div>
-                    <div class="block-image-text">
-                        <img src="/pics/nav-tech-blog-2.jpg" alt="" class="image-item">
-                            <div class="text">
-                                <h2 class="blog-title">
-                                is simply dummy text of the printing 
-                                and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </h2>
-                                <p class="date">March 21, 2025</p>
-                                <p class="spoil">It is a long established fact that a reader will be distracted by the readable content
-                                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
-                                    normal distribution of letters
-                               </p>
-                            </div>
-                    </div>
-                    <div class="block-image-text">
-                        <img src="/pics/nav-tech-blog-1.jpg" alt="" class="image-item">
-                            <div class="text">
-                                <h2 class="blog-title">
-                                is simply dummy text of the printing 
-                                and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                                </h2>
-                                <p class="date">March 21, 2025</p>
-                                <p class="spoil">It is a long established fact that a reader will be distracted by the readable content
-                                     of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less 
-                                     normal distribution of letters
-                                </p>
-                            </div>
+                    <div class="about-details">
+                        <h2 class="section-title">ABOUT US</h2>
+                        <p class="text">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        , when an unknown printer took a galley of type and scrambled it to make a 
+                        type specimen book. It has survived not only five centuries, but also the leap
+                        into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                        <div class="social-link-list">
+                            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>                           
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="rate-section" id="rate">
-            <h2 class="section-title">rate Us</h2>
-            <div class="section-content">
-                <ul class="rate-info-list">
-                    <li class="rate-info">
-                        <i class="fa-regular fa-envelope"></i>
-                            <p>info@E-Deviceswebsites.com</p>
-                    </li>
-                    <li class="rate-info">
-                        <i class="fa-solid fa-phone"></i>
-                        <p>0398399540</p>
-                    </li>
-                    <li class="rate-info">
-                        <i class="fa-regular fa-clock"></i>
-                            <p>From 8am - 17pm every day</p>
-                    </li>
-                    <li class="rate-info">
-                        <i class="fa-solid fa-location-dot"></i>
-                            <p>University Of Information Technology, Thu Duc, Ho Chi Minh</p>
-                    </li>
-                    <li class="rate-info">
-                        <i class="fa-regular fa-envelope"></i>
-                            <p>info@E-Deviceswebsites.com</p>
-                    </li>
-                    <li class="rate-info">
-                        <i class="fa-solid fa-globe"></i>
-                        <p>www.fromuitwithlove.com</p>                            
-                    </li> 
-                </ul>
-                <form action="#" class="rate-form">
-                    <input type="text" class="form-input info" placeholder="Your name" required>
-                    <input type="email" class="form-input info" placeholder="Your email"req>
-                    <textarea class="form-input evaluation" placeholder="Your Evaluation" required></textarea>
-                    <button class="submit-form">Send</button>
-                </form>
-            </div>
-        </section>
-        <footer class="footer-section">
-            <div class="section-content">
-                <p class="copyright-text">&copy 2025 E-Devices Store</p>
-                <div class="social-link-list">
-                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>                           
+            </section>
+            <section class="testimonials-section" id="testimonials">
+                <h2 class="section-title">SPECIAL SIRES</h2>
+                <div class="section-content">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonials swiper-slide">
+                                <img src="/pics/scroll-bar-1.png" alt="scroll-1" class="scroll-bar-image">
+                                <h3 class="name">...</h3>
+                                <i class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
+                            </div>
+                            <div class="testimonials swiper-slide">
+                                <img src="/pics/scroll-bar-2.png" alt="scroll-1" class="scroll-bar-image">
+                                <h3 class="name">...</h3>
+                                <i class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
+                            </div>
+                            <div class="testimonials swiper-slide">
+                                <img src="/pics/scroll-bar-3.png" alt="scroll-1" class="scroll-bar-image">
+                                <h3 class="name">...</h3>
+                                <i class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
+                            </div>
+                            <div class="testimonials swiper-slide">
+                                <img src="/pics/scroll-bar-4.png" alt="scroll-1" class="scroll-bar-image">
+                                <h3 class="name">...</h3>
+                                <i class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry</i>
+                            </div>
+                        </div>
+                        <!-- Thêm thanh điều hướng và nút điều khiển -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div>
-                <p class="policy-text">
-                    <a href="#" class="policy-link">Privacy policy</a>
-                    <span class="separator">&#9679</span>
-                    <a href="#" class="policy-link">Refund policy</a>
-                </p>
-            </div>
-        </footer>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>const swiper = new Swiper('.swiper', {
-        loop: true,
-        grabCursor: true,
-        spaceBetween: 25,
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-          dynamicBullets: true,
-        },
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },  
-        
-        breakpoints: {
-          0: {
-            slidesPerView: 1,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          }
-        }
-      });
-    </script>
-</body>
-</html>
+                </section>
+                <h2 class="menu-title">BEST SELLER OF MONTH</h2>
+                <section class="menu-section phone">
+                    <% phones.forEach(phone => { %>
+                        <div class="list-item">
+                            <form action="/product_detail_phone" method="POST">
+                                <input type="hidden" name="ma_san_pham" value="<%= phone.ma_san_pham %>">
+                                <button  type="submit" class="phone-click">
+                                    <img src="<%= phone.hinh_anh %>" alt="<%= phone.ten_san_pham %>" class="item-image">
+                                    <h2 class="name"><%= phone.ten_san_pham %></h2>
+                                    <p class="price"><%= phone.gia %>đ</p>
+                                </button>
+                            </form>
+                        </div>
+                    <% }); %>
+                </section>
+                
+                <section class="menu-section laptop">
+                    <% laptops.forEach(laptop => { %>
+                        <div class="list-item">
+                            <form action="/product_detail_laptop" method="POST">
+                                <input type="hidden" name="ma_san_pham" value="<%= laptop.ma_san_pham %>">
+                                <button type="submit" class="phone-click">
+                                    <img src="<%= laptop.hinh_anh %>" alt="<%= laptop.ten_san_pham %>" class="item-image">
+                                    <h2 class="name"><%= laptop.ten_san_pham %></h2>
+                                    <p class="price"><%= laptop.gia %>đ</p>
+                                </button>
+                            </form>
+                        </div>
+                    <% }); %>
+                </section>
+                
+                <section class="menu-section apple-watch">
+                    <% watches.forEach(watch => { %>
+                        <div class="list-item">
+                            <form action="/product_detail_apple_watch" method="POST">
+                                <input type="hidden" name="ma_san_pham" value="<%= watch.ma_san_pham %>">
+                                <button type="submit" class="phone-click">
+                                    <img src="<%= watch.hinh_anh %>" alt="<%= watch.ten_san_pham %>" class="item-image">
+                                    <h2 class="name"><%= watch.ten_san_pham %></h2>
+                                    <p class="price"><%= watch.gia %>đ</p>
+                                </button>
+                            </form>
+                        </div>
+                    <% }); %>
+                </section>
+            
+        <%- include('partials/footer.ejs') %>  
+        </main>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>const swiper = new Swiper('.swiper', {
+            loop: true,
+            grabCursor: true,
+            spaceBetween: 25,
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets: true,
+            },
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },  
+            
+            breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            }
+            }
+        });
+        </script>
+    </body>
+    </html>
